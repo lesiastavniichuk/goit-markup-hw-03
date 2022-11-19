@@ -57,6 +57,20 @@ margin: 0 auto;
 .header {
   background-color: #ECECEC;
 }
+header .container{
+  display: flex;
+  align-items: center;
+}
+.header-list{
+  display: flex;
+  margin-left: 93px;
+  height: 80px;
+  align-items: center;
+}
+.header-list li+li{
+  margin-left: 50px;
+}
+
 .firstpartlogo {
 color: var(--primary-link-color);
 }
@@ -86,7 +100,11 @@ color: #000000;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575
+  color: #757575;
+  
+}
+.header-cont{
+  margin-left: auto;
 }
 .header-tel-mail:hover,
 .header-tel-mail:focus{
@@ -96,6 +114,7 @@ color: #000000;
 /*------HERO------ */
 .hero {
 background-color: var(--foncolor);
+margin-bottom: 94px;
 }
 .hero-center{
   padding: 200px 452px 280px 452px;
@@ -123,10 +142,13 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-padding-top: 94px;
 padding-bottom: 10px;
-
 }
+
+.feature-list{
+  display: flex;
+}
+
 .feature-text{
 font-weight: 400;
 font-size: 14px;
@@ -135,9 +157,15 @@ letter-spacing: 0.03em;
 color:var(--second-link-color);
 max-width: 300px;
 }
+.feature-list li+li {
+  margin-left: 30px;
+}
 
 /*------DEVELOPMENT------ */
 
+.development .container{
+  margin-top: 118px;
+}
 .development{
   background: #F5F5F5;
 font-weight: 700;
@@ -147,6 +175,11 @@ text-align: center;
 letter-spacing: 0.03em;
 /* margin-bottom: 50px; */
 }
+.work{
+  display: flex;
+}
+
+
 
 /*------TEAM------ */
 .team{
@@ -158,6 +191,9 @@ text-align: center;
 letter-spacing: 0.03em;
 padding: 94px 0;
 
+}
+.member-team-list{
+  display: flex;
 }
 .our-team{
   margin-bottom: 50px;
@@ -193,12 +229,19 @@ color: var(--second-link-color);
 
 /* --------------------------- OUR WORKS------------------------- */
 
+.button-work-list{
+  display: flex;
+}
 .btn-work{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
+}
+.work-list{
+  display: flex;
+  
 }
 .work-title{
 font-weight: 700;
