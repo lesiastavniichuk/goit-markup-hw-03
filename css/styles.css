@@ -3,8 +3,6 @@
   --second-link-color:#757575;
   --foncolor:#2F303A;
   --accent-color:#FFFFFF;
-  /* 
-   */
 }
 p, h1, h2, h3, h4, h5, h6{
   margin: 0px;
@@ -30,7 +28,7 @@ img{
   
 }
 .container{
-  width: 1630px;
+  width: 1230px;
   padding: 0px 15px;
 margin: 0 auto;
 }
@@ -44,6 +42,8 @@ margin: 0 auto;
   font-family: 'Roboto'sans-serif;
   cursor: pointer;
   color: #212121;
+  letter-spacing: 0.06em;
+  padding: 10px 24px;
 }
 
 .btn:hover,
@@ -55,11 +55,12 @@ margin: 0 auto;
 /*------HEADER------ */
 
 .header {
-  background-color: #ECECEC;
+  background-color: #FFFFFF;
 }
 header .container{
   display: flex;
   align-items: center;
+  
 }
 .header-list{
   display: flex;
@@ -110,14 +111,16 @@ color: #000000;
 .header-tel-mail:focus{
   color: var(--primary-link-color)
 }
-
-/*------HERO------ */
+/* -------------------HERO------------------- */
 .hero {
 background-color: var(--foncolor);
 margin-bottom: 94px;
+
 }
 .hero-center{
-  padding: 200px 452px 280px 452px;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  
 }
 .title{
 font-size: 44px;
@@ -127,6 +130,7 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--accent-color);
 margin-bottom: 30px;
+width: 696px;
 }
 .btn{
 margin: 0 auto;
@@ -138,16 +142,26 @@ margin-top: 30px;
 
 
 .feature{
+ 
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 padding-bottom: 10px;
 }
+.feature .container{
+  margin-bottom: 94px;
+  
+
+}
+.feature-list li+li{
+  margin-left: 30px;
+}
 
 .feature-list{
   display: flex;
 }
+
 
 .feature-text{
 font-weight: 400;
@@ -164,19 +178,23 @@ max-width: 300px;
 /*------DEVELOPMENT------ */
 
 .development .container{
-  margin-top: 118px;
+  margin-top: 94px;
+  
+}
+.work li+li{
+  margin-left: 30px;
 }
 .development{
-  background: #F5F5F5;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
-/* margin-bottom: 50px; */
 }
 .work{
   display: flex;
+  padding-top: 50px;
+  margin-bottom: 94px;
 }
 
 
@@ -189,8 +207,14 @@ font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
-padding: 94px 0;
-
+margin-bottom: 94px;
+}
+.member-team-list li+li{
+  margin-left: 30px;
+}
+.team .container{
+  padding-top: 94px;
+  
 }
 .member-team-list{
   display: flex;
@@ -227,21 +251,37 @@ letter-spacing: 0.03em;
 color: var(--second-link-color);
 }
 
-/* --------------------------- OUR WORKS------------------------- */
 
+/* --------------------------- PORTFOLIO------------------------- */
+
+/* --------------------------- HERO------------------------- */
 .button-work-list{
-  display: flex;
+  display: flex; 
+  padding-top: 100px;
+  padding-bottom: 56px;
+  justify-content: center;
+}
+main .container{
+  
+}
+.button-work-list li+li{
+  margin-left: 30px;
 }
 .btn-work{
+padding: 6px 22px;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+margin-top: 0;
 }
+/* --------------------------- OUR WORKS------------------------- */
 .work-list{
   display: flex;
-  
+  flex-wrap: wrap;
 }
 .work-title{
 font-weight: 700;
@@ -250,12 +290,21 @@ line-height: 2;
 letter-spacing: 0.06em;
 color: #212121;
 }
+.work-list li+li{
+  margin-left: 30px;
+}
 .work-text{
 font-weight: 400;
 font-size: 16px;
 line-height: 1.89;
 letter-spacing: 0.03em;
 color: var(--second-link-color);
+}
+.item{
+  /* margin-right: 30px; */
+}
+.item:nth-child(3n){
+  margin-right: 0;
 }
 
 /*------FOOTER------ */
@@ -264,18 +313,30 @@ color: var(--second-link-color);
   background-color:var(--foncolor);
   padding: 60px 0;
 }
+footer .container{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .firstpartlogofooter {
   color: var(--primary-link-color);
   }
   .secondtpartlogofooter {
   color: var(--accent-color);
   }
+ 
   .contactfooter{
-font-family: 'Roboto', sans-serif;
+
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: var(--accent-color);
+  }
+
+  .contactfooter-list{
+    padding-top: 28px;
+  }
+  .contactfooter{
+    margin-bottom: 12px;
   }
 
