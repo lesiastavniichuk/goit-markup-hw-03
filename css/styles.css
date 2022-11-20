@@ -300,7 +300,7 @@ padding-bottom: 30px;
   padding-top: 100px;
   padding-bottom: 56px;
   justify-content: center;
-  background-color: transparent;
+  border: transparent;
 }
 
 .button-work-list li+li{
@@ -332,6 +332,7 @@ font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: #212121;
+margin-left: 24px;
 }
 
 .work-text{
@@ -340,6 +341,7 @@ font-size: 16px;
 line-height: 1.89;
 letter-spacing: 0.03em;
 color: var(--second-link-color);
+margin-left: 24px;
 }
 
 .item{
@@ -363,46 +365,6 @@ margin-right: 30px;
 
 /*------FOOTER------ */
 
-/* .footer{
-  background-color:var(--foncolor);
-  padding: 60px 0;
-}
-
-footer .container{
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.firstlogofooter {
-color: var(--primary-link-color);
-padding-bottom: 28px;
- }
-
-.secondtlogofooter {
-  color: var(--accent-color);
- 
- }
- 
-.contactfooter{
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height:  1.14;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
-color: var(--accent-color);
- }
- .logofooter{
-  margin-bottom: 28px;
- }
-
-.contactfooter-list{
-    padding-top: 28px;
-}
-.contactfooter{
-margin-bottom: 12px;
-} */
 
 .footer{
   display: block;
@@ -417,17 +379,17 @@ margin-bottom: 12px;
   color: var(--accent-color);
  }
  .logofooter{
+  
   margin-bottom: 28px;
  }
  .contactfooter{
+  display: block;
   font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 14px;
 line-height: 16px;
-/* identical to box height, or 114% */
-
 letter-spacing: 0.03em;
-padding-top: 28px;
+margin-bottom: 12px;
 color: #FFFFFF;
  }
