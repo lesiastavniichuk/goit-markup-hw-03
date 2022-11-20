@@ -134,12 +134,12 @@ color: #000000;
 
 .hero {
 background-color: var(--foncolor);
-margin-bottom: 94px;
+
 }
 
 .hero-center{
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
   padding-left: 15px;
 }
 
@@ -173,11 +173,14 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-padding-bottom: 10px;
+/* padding-bottom: 94px; */
+/* padding-top: 94px; */
 }
 
 .feature .container{
-  margin-bottom: 94px;
+  /* margin-bottom: 94px; */
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .feature-list li+li{
@@ -203,10 +206,6 @@ max-width: 300px;
 
 /*------DEVELOPMENT------ */
 
-.development .container{
-  margin-top: 94px;
-}
-
 .work li+li{
   margin-left: 30px;
 }
@@ -222,7 +221,7 @@ letter-spacing: 0.03em;
 .work{
   display: flex;
   padding-top: 50px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 
@@ -235,7 +234,8 @@ font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
-margin-bottom: 94px;
+padding-bottom: 94px;
+padding-top: 94px;
 }
 
 .member-team-list li+li{
@@ -243,7 +243,7 @@ margin-bottom: 94px;
 }
 
 .team .container{
-  padding-top: 94px; 
+   
 }
 
 .member-team-list{
@@ -251,7 +251,7 @@ margin-bottom: 94px;
 }
 
 .our-team{
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .member-team {
@@ -263,15 +263,17 @@ letter-spacing: 0.03em;
 margin-top: 30px;
 margin-bottom: 10px;
 }
-
+.card{
+  background-color: #FFFFFF;
+}
 .card-member{
 width: 270px;
-height: 368px;
 background: #FFFFFF;
-
+background-color: transparent;
 /* material shadow  */
 
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px
+ rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 0px 0px 4px 4px;
 }
 
@@ -282,6 +284,7 @@ line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--second-link-color);
+padding-bottom: 30px;
 }
 
 
@@ -297,6 +300,7 @@ color: var(--second-link-color);
   padding-top: 100px;
   padding-bottom: 56px;
   justify-content: center;
+  background-color: transparent;
 }
 
 .button-work-list li+li{
@@ -359,7 +363,7 @@ margin-right: 30px;
 
 /*------FOOTER------ */
 
-.footer{
+/* .footer{
   background-color:var(--foncolor);
   padding: 60px 0;
 }
@@ -369,20 +373,28 @@ footer .container{
   padding-bottom: 60px;
 }
 
-.firstpartlogofooter {
+.firstlogofooter {
 color: var(--primary-link-color);
+padding-bottom: 28px;
  }
 
-.secondtpartlogofooter {
+.secondtlogofooter {
   color: var(--accent-color);
+ 
  }
  
 .contactfooter{
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height:  1.14;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
 color: var(--accent-color);
+ }
+ .logofooter{
+  margin-bottom: 28px;
  }
 
 .contactfooter-list{
@@ -390,5 +402,32 @@ color: var(--accent-color);
 }
 .contactfooter{
 margin-bottom: 12px;
-}
+} */
 
+.footer{
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color:var(--foncolor);
+}
+.firstlogofooter{
+ color: var(--primary-link-color)
+}
+.secondtlogofooter {
+  color: var(--accent-color);
+ }
+ .logofooter{
+  margin-bottom: 28px;
+ }
+ .contactfooter{
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height, or 114% */
+
+letter-spacing: 0.03em;
+padding-top: 28px;
+color: #FFFFFF;
+ }
